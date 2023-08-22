@@ -2,21 +2,34 @@ version: "3.8"
 
 services:
   minecraft:
-    image: "itzg/minecraft-server"
-    container_name: "minecraft-test"
+    image: "itzg/minecraft-server:java20"
+    container_name: "minecraft"
     dns:
       - 8.8.8.8
       - 4.4.4.4
     environment:
       EULA: true
-      MEMORY: 4G
-      TYPE: FORGE
-      VERSION: 1.20.1
-      FORGE_VERSION: 47.1.44
+      MEMORY: 6G
+      TYPE: SPIGOT
+      OPS: wonyus
+      SEED: -1398157667934407038
+
     ports:
-      - "25566:25565"
+      - "25565:25565"
+
     volumes:
       - ./data:/data
+
     stdin_open: true
     tty: true
-    restart: 'no'
+    restart: 'unless-stopped'
+
+  # rcon:
+  #   image: itzg/rcon
+  #   environment:
+  #     RWA_PASSWORD: "wonyus"
+  #   ports:
+  #     - "4326:4326"
+  #     - "4327:4327"
+  #   volumes:
+  #     - "./rcon:/opt/rcon-web-admin/db"
