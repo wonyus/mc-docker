@@ -2,34 +2,39 @@ version: "3.8"
 
 services:
   minecraft:
-    image: "itzg/minecraft-server:java20"
-    container_name: "minecraft"
+    image: "itzg/minecraft-server"
+    container_name: "minecraft-t"
     dns:
       - 8.8.8.8
       - 4.4.4.4
     environment:
       EULA: true
-      MEMORY: 6G
+      MEMORY: 4G
       TYPE: SPIGOT
-      OPS: wonyus
-      SEED: -1398157667934407038
+      SEED: -1398157667934407000
+      ENABLE_RCON: true
+      RCON_PASSWORD: wonyus
+      RCON_PORT: 28016
 
     ports:
-      - "25565:25565"
+      - "25566:25565"
 
     volumes:
       - ./data:/data
 
     stdin_open: true
     tty: true
-    restart: 'unless-stopped'
+    restart: 'no'
 
-  # rcon:
-  #   image: itzg/rcon
-  #   environment:
-  #     RWA_PASSWORD: "wonyus"
-  #   ports:
-  #     - "4326:4326"
-  #     - "4327:4327"
-  #   volumes:
-  #     - "./rcon:/opt/rcon-web-admin/db"
+  rcon:
+    image: itzg/rcon
+    environment:
+      RWA_RCON_PASSWORD: wonyus
+      RWA_PASSWORD: wonyus
+      RWA_GAME: minecraft
+      RWA_RCON_PORT: 28016
+    ports:
+      - "4326:4326"
+      - "4327:4327"
+    volumes:
+      - "./rcon:/opt/rcon-web-admin/db"

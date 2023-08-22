@@ -1,0 +1,15 @@
+{
+  "25f9c3eea14abb6186f82f9ff9c4f338": {
+    "id": "25f9c3eea14abb6186f82f9ff9c4f338",
+    "game": "minecraft",
+    "name": "minecraft",
+    "host": "127.0.0.1",
+    "users": [
+      "admin"
+    ],
+    "web": false,
+    "active": true,
+    "rcon_port": 28016,
+    "rcon_password": "wonyus"
+  }
+}

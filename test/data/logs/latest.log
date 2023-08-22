@@ -1,0 +1,639 @@
+[05:43:26] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05:43:26] [Yggdrasil Key Fetcher/ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:119) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:91) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:94) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.lambda$get$1(YggdrasilServicesKeyInfo.java:81) ~[authlib-4.0.43.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) ~[?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at sun.security.ssl.SSLSocketImpl.handleEOF(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:?]
+	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:140) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:96) ~[authlib-4.0.43.jar:?]
+	... 9 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLTransport.decode(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:?]
+	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:140) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:96) ~[authlib-4.0.43.jar:?]
+	... 9 more
+[05:43:27] [ServerMain/INFO]: Loaded 7 recipes
+[05:43:27] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[05:43:27] [Server thread/INFO]: Loading properties
+[05:43:27] [Server thread/INFO]: This server is running CraftBukkit version 3857-Spigot-94e187b-8ef7afe (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT)
+[05:43:27] [Server thread/INFO]: Debug logging is disabled
+[05:43:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[05:43:27] [Server thread/INFO]: Using 4 threads for Netty based IO
+[05:43:27] [Server thread/INFO]: Default game type: SURVIVAL
+[05:43:27] [Server thread/INFO]: Generating keypair
+[05:43:27] [Server thread/INFO]: Starting Minecraft server on *:25565
+[05:43:27] [Server thread/INFO]: Using epoll channel type
+[05:43:27] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[05:43:27] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[05:43:27] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[05:43:27] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[05:43:27] [Server thread/INFO]: Preparing level "world"
+[05:43:27] [Server thread/INFO]: -------- World Settings For [world] --------
+[05:43:27] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
+[05:43:27] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Di 128 / Other 64
+[05:43:27] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[05:43:27] [Server thread/INFO]: Experience Merge Radius: 3.0
+[05:43:27] [Server thread/INFO]: Mob Spawn Range: 6
+[05:43:27] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Cane Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Melon Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Potato Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Vine Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[05:43:27] [Server thread/INFO]: Max TNT Explosions: 100
+[05:43:27] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[05:43:27] [Server thread/INFO]: Item Merge Radius: 2.5
+[05:43:27] [Server thread/INFO]: Item Despawn Rate: 6000
+[05:43:27] [Server thread/INFO]: View Distance: 10
+[05:43:27] [Server thread/INFO]: Simulation Distance: 10
+[05:43:27] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[05:43:27] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[05:43:27] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[05:43:27] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[05:43:27] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[05:43:27] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
+[05:43:27] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Di 128 / Other 64
+[05:43:27] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[05:43:27] [Server thread/INFO]: Experience Merge Radius: 3.0
+[05:43:27] [Server thread/INFO]: Mob Spawn Range: 6
+[05:43:27] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Cane Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Melon Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Potato Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Vine Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[05:43:27] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[05:43:27] [Server thread/INFO]: Max TNT Explosions: 100
+[05:43:27] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[05:43:27] [Server thread/INFO]: Item Merge Radius: 2.5
+[05:43:27] [Server thread/INFO]: Item Despawn Rate: 6000
+[05:43:27] [Server thread/INFO]: View Distance: 10
+[05:43:27] [Server thread/INFO]: Simulation Distance: 10
+[05:43:27] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[05:43:27] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[05:43:27] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[05:43:27] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[05:43:29] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[05:43:29] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
+[05:43:29] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Di 128 / Other 64
+[05:43:29] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[05:43:29] [Server thread/INFO]: Experience Merge Radius: 3.0
+[05:43:29] [Server thread/INFO]: Mob Spawn Range: 6
+[05:43:29] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Cane Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Melon Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Potato Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Vine Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[05:43:29] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[05:43:29] [Server thread/INFO]: Max TNT Explosions: 100
+[05:43:29] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[05:43:29] [Server thread/INFO]: Item Merge Radius: 2.5
+[05:43:29] [Server thread/INFO]: Item Despawn Rate: 6000
+[05:43:29] [Server thread/INFO]: View Distance: 10
+[05:43:29] [Server thread/INFO]: Simulation Distance: 10
+[05:43:29] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[05:43:29] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[05:43:29] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[05:43:29] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[05:43:29] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[05:43:30] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[05:43:30] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[05:43:30] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[05:43:30] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[05:43:31] [Server thread/INFO]: Time elapsed: 2222 ms
+[05:43:31] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[05:43:31] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[05:43:31] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[05:43:32] [Worker-Main-2/INFO]: Preparing spawn area: 10%
+[05:43:32] [Server thread/INFO]: Time elapsed: 1165 ms
+[05:43:32] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[05:43:32] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[05:43:33] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[05:43:33] [Server thread/INFO]: Time elapsed: 905 ms
+[05:43:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[05:43:33] [Server thread/INFO]: Done (5.669s)! For help, type "help"
+[05:43:33] [Server thread/INFO]: Starting remote control listener
+[05:43:33] [Server thread/INFO]: Thread RCON Listener started
+[05:43:33] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[05:43:55] [User Authenticator #1/INFO]: UUID of player wonyus is 81bfb85d-2316-3956-9d01-fe36d268dd42
+[05:43:55] [Server thread/INFO]: wonyus joined the game
+[05:43:55] [Server thread/INFO]: wonyus[/172.21.0.1:56736] logged in with entity id 591 at ([world]157.1129116203842, 82.2826012322566, 109.88032820854741)
+[05:44:07] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:07] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:07] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:07] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:08] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:08] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:08] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:08] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:swim_speed'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:09] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:swim_speed'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:18] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:19] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:19] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:19] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:19] [Server thread/WARN]: Ignoring unknown attribute 'forge:swim_speed'
+[05:44:19] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:19] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:19] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:21] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:21] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:22] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:22] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:22] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:22] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:24] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:24] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:24] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:24] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:24] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:24] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:52] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:52] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:53] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:53] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:44:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:44:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:02] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:02] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:02] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:02] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:21] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:21] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:21] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:21] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:21] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:21] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/INFO]: wonyus has made the advancement [We Need to Go Deeper]
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:28] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:29] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:50] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:51] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:54] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:55] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:56] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:45:57] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:45:57] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:03] [Server thread/INFO]: wonyus issued server command: /help
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:30] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:31] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:35] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:35] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:35] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:35] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:35] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:35] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:35] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:35] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:36] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:46:36] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:46:58] [Server thread/INFO]: wonyus issued server command: /tps wonyus
+[05:47:16] [Server thread/INFO]: wonyus issued server command: /tp 57 87 -64
+[05:47:16] [Server thread/INFO]: [wonyus: Teleported wonyus to 57.500000, 87.000000, -63.500000]
+[05:47:16] [Server thread/WARN]: wonyus moved too quickly! 53.81202140618417,-14.89327062486123,-93.86690212032667
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:47:16] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:47:31] [Server thread/INFO]: wonyus issued server command: /tp 57 87 60
+[05:47:31] [Server thread/INFO]: [wonyus: Teleported wonyus to 57.500000, 87.000000, 60.500000]
+[05:47:31] [Server thread/WARN]: wonyus moved too quickly! 0.0,0.0,124.0
+[05:47:47] [Server thread/INFO]: wonyus issued server command: /tp 57 87 60
+[05:47:47] [Server thread/INFO]: [wonyus: Teleported wonyus to 57.500000, 87.000000, 60.500000]
+[05:47:47] [Server thread/WARN]: wonyus moved too quickly! -1.2565756870427691,-5.2443359466236785,23.987250835527533
+[05:48:16] [Server thread/INFO]: wonyus issued server command: /tp 57 87 -26
+[05:48:16] [Server thread/INFO]: [wonyus: Teleported wonyus to 57.500000, 87.000000, -25.500000]
+[05:48:27] [Server thread/INFO]: wonyus issued server command: /tp 57 87 60
+[05:48:27] [Server thread/INFO]: [wonyus: Teleported wonyus to 57.500000, 87.000000, 60.500000]
+[05:48:27] [Server thread/WARN]: wonyus moved too quickly! 0.0,0.0,86.0
+[05:48:39] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:48:39] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:48:42] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:48:42] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:48:43] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:48:43] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:48:43] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:48:43] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:48:43] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:48:43] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:48:44] [Server thread/WARN]: Ignoring unknown attribute 'forge:entity_gravity'
+[05:48:44] [Server thread/WARN]: Ignoring unknown attribute 'forge:step_height_addition'
+[05:52:01] [Server thread/INFO]: Stopping the server
+[05:52:01] [Server thread/INFO]: Stopping server
+[05:52:01] [Server thread/INFO]: Saving players
+[05:52:01] [Server thread/INFO]: wonyus lost connection: Server closed
+[05:52:01] [Server thread/INFO]: wonyus left the game.
+[05:52:01] [Server thread/INFO]: Saving worlds
+[05:52:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[05:52:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[05:52:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[05:52:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[05:52:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[05:52:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[05:52:02] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[05:52:02] [Server thread/INFO]: Thread RCON Listener stopped

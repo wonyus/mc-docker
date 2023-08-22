@@ -1,0 +1,13 @@
+authtoken: 21s3iVs7hxOIvcrZ7ya5vTO6jf1_38DxfufZhhEu9CTeZjefR
+region: ap
+web_addr: localhost:4040
+version: 2
+tunnels:
+  mc:
+    addr: minecraft:25565
+    proto: tcp
+  
+  rc:
+    addr: minecraft:25575
+    proto: tcp
+  
