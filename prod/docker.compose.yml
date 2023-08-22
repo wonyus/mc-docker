@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: "itzg/minecraft-server"
+    container_name: "minecraft"
+    dns:
+      - 8.8.8.8
+      - 4.4.4.4
+    environment:
+      EULA: true
+      MEMORY: 4G
+      TYPE: FORGE
+      VERSION: 1.20.1
+      FORGE_VERSION: 47.1.44
+    ports:
+      - "25565:25565"
+      - "25575:25575"
+    volumes:
+      - ./data:/data
+    stdin_open: true
+    tty: true
+    restart: 'no'
+    healthcheck:
+      test: "mc-health"
+      interval: 5s
+      timeout: 90s
+      retries: 20
+      start_period: 1m
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: "ngrok"
+    command:
+      - "start"
+      - "--all"
+      - "--config"
+      - "/etc/ngrok.yml"
+
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml
+    ports:
+      - '4040:4040'
+    expose:
+      - '4040'
