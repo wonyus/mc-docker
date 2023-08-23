@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.21.0.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1692710569241
+  login: 1692709307729
+money: '0'
+last-account-name: HotPatrical
+lastlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: 5.5
+  y: 80.0
+  z: -6.5
+  yaw: 2.0921120643615723
+  pitch: 0.0
+logoutlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: 62.3041031411782
+  y: 84.0
+  z: -72.75865348168344
+  yaw: 115.95947265625
+  pitch: 22.20069694519043

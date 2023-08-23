@@ -1,10 +1,10 @@
 {
-  "961fe6e0bead9d9ddfa66ccc2da206af": {
-    "password": "c7674f2c7148790f7bb09ee682e1bb80",
-    "id": "961fe6e0bead9d9ddfa66ccc2da206af",
-    "username": "admin",
+  "346f7b3bb82591f4b6c11b540835fb98": {
+    "password": "346f7b3bb82591f4b6c11b540835fb98",
+    "id": "346f7b3bb82591f4b6c11b540835fb98",
+    "username": "wonyus",
     "readonlyoptions": false,
-    "admin": false,
-    "loginHash": "c0839a1c895a08da10f1de2911bdd96037fd26fa46a1bef902efc9f9efceac86"
+    "admin": true,
+    "loginHash": "ed0b4a26837086f4bc1437e40ee5de2d8f8c0af1096e81a1ab312e287332293f"
   }
 }

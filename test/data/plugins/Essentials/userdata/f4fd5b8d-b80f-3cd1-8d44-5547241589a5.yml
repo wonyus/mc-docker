@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.21.0.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1692809452974
+  login: 1692806877217
+money: '0'
+last-account-name: painsaga
+lastlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: 10.5
+  y: 78.0
+  z: -2.5
+  yaw: 4.984801292419434
+  pitch: 0.0
+logoutlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: 10.978247699863752
+  y: 56.0
+  z: -363.442653392981
+  yaw: 92.41650390625
+  pitch: 23.6981143951416

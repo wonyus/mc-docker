@@ -1,0 +1,404 @@
+# This file is not intended to be manually modified! If you want to manually edit this file anyways, ensure that the server is not running currently and that you have prepared a backup of this file.
+
+data-version: 3|2|3465
+'3':
+  uniqueId: 6e10aabd-4241-4732-add7-5153dc231486
+  world: world
+  x: -3
+  y: 81
+  z: -20
+  yaw: 110.3904
+  type: admin
+  name: Mike
+  object:
+    type: villager
+    baby: false
+    profession: BUTCHER
+    villagerType: PLAINS
+    villagerLevel: 2
+  recipes:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: COOKED_BEEF
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EGG
+        amount: 16
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: BREAD
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+        amount: 5
+  snapshots: []
+'8':
+  uniqueId: 7fb45f76-1887-49f4-aa0d-f961445b82e7
+  world: world
+  x: 41
+  y: 87
+  z: -29
+  yaw: 90.0
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: true
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  recipes: {}
+  snapshots: []
+'10':
+  uniqueId: f9dea992-2dfd-4650-80c9-75d1740410ee
+  world: world
+  x: 41
+  y: 86
+  z: -30
+  yaw: 90.0
+  type: admin
+  name: Jack
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EGG
+        amount: 16
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EGG
+        amount: 16
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: OAK_SAPLING
+        amount: 64
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: DIAMOND
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: IRON_INGOT
+        amount: 64
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHEAT_SEEDS
+        amount: 64
+  snapshots: []
+'11':
+  uniqueId: 68cbfd1f-c013-4715-8c02-72cc0ada089c
+  world: world
+  x: 71
+  y: 96
+  z: -168
+  yaw: 11.010786
+  type: admin
+  name: Paul
+  object:
+    type: villager
+    baby: false
+    profession: BUTCHER
+    villagerType: PLAINS
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: GUNPOWDER
+        amount: 4
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+        amount: 2
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SLIME_BALL
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+        amount: 5
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SAND
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+        amount: 5
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SADDLE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+        amount: 5
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ANDESITE
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+        amount: 10
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: COBBLESTONE
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+        amount: 5
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EXPERIENCE_BOTTLE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+        amount: 32
+  snapshots: []
+'12':
+  uniqueId: a1fa4ce5-13e4-4faf-a25c-f4407c6e3026
+  world: world
+  x: -17
+  y: 68
+  z: -68
+  yaw: 88.108444
+  type: sell
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  owner uuid: 180c6dbf-7888-3b04-b1f0-3d9390aea517
+  owner: kopiin
+  chestx: -17
+  chesty: 68
+  chestz: -69
+  offers: {}
+  snapshots: []
+'19':
+  uniqueId: 8d11c798-9739-4d48-9e96-79a672533cd6
+  world: world
+  x: 64
+  y: 96
+  z: -169
+  yaw: 1.1611218
+  type: admin
+  name: Marta
+  object:
+    type: villager
+    baby: false
+    profession: FARMER
+    villagerType: TAIGA
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: FLOWERING_AZALEA
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: AZALEA
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EMERALD
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: DANDELION
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: CORNFLOWER
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: BLUE_ORCHID
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ALLIUM
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '8':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_TULIP
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '9':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: RED_TULIP
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '10':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: PINK_TULIP
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '11':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ORANGE_TULIP
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '12':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SUNFLOWER
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '13':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ROSE_BUSH
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '14':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LILY_OF_THE_VALLEY
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '15':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LILAC
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+    '16':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: OXEYE_DAISY
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: POPPY
+  snapshots: []

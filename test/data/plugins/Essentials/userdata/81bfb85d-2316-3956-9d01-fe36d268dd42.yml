@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.21.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1692812391033
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1692814107788
+  login: 1692812351186
+money: '0'
+last-account-name: wonyus
+logoutlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: 54.76031418025807
+  y: 87.0
+  z: -28.505882944003655
+  yaw: 18.125
+  pitch: 2.01737117767334
+lastlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: -3765.699999988079
+  y: 65.41999998688698
+  z: 1788.4890345100684
+  yaw: 136.87918090820312
+  pitch: 7.995390892028809
+homes:
+  home:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: 193.9795478804315
+    y: 75.0
+    z: 152.22177211179093
+    yaw: -153.75411987304688
+    pitch: -2.4021503925323486

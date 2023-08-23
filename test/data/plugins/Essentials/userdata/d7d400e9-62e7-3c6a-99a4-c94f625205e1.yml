@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.21.0.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1692816629878
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1692818712022
+  login: 1692817380819
+money: '0'
+last-account-name: tusstoss22
+logoutlocation:
+  world: b8e2e855-a2bc-4965-a734-0fd7bdcd36ec
+  world-name: world_the_end
+  x: 233.6800328609787
+  y: 2.0
+  z: 0.30000001192092896
+  yaw: -89.95578002929688
+  pitch: 12.625956535339355
+lastlocation:
+  world: b8e2e855-a2bc-4965-a734-0fd7bdcd36ec
+  world-name: world_the_end
+  x: 233.30000001192093
+  y: 2.0
+  z: 0.699999988079071
+  yaw: 100.2371826171875
+  pitch: 15.400899887084961
+homes:
+  home:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: 22.619390843714815
+    y: 81.0
+    z: -101.24588922628273
+    yaw: 46.082672119140625
+    pitch: 2.515094757080078

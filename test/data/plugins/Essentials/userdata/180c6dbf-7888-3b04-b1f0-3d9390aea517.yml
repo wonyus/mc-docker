@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.21.0.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1692818477083
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1692818703730
+  login: 1692817359836
+money: '0'
+last-account-name: kopiin
+homes:
+  home:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: -11.51928921601565
+    y: 75.5
+    z: -64.92139088008409
+    yaw: -174.28387451171875
+    pitch: 50.07456588745117
+  shop:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: 25.678543233489048
+    y: 83.0
+    z: -117.79230946916891
+    yaw: 82.4072265625
+    pitch: 4.900630950927734
+lastlocation:
+  world: b8e2e855-a2bc-4965-a734-0fd7bdcd36ec
+  world-name: world_the_end
+  x: 225.3676092238927
+  y: 1.0
+  z: 0.7069673137853716
+  yaw: -89.69501495361328
+  pitch: -10.295401573181152
+logoutlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: -88.30000001192093
+  y: 62.0
+  z: -93.30000001192093
+  yaw: 70.04061889648438
+  pitch: 21.248497009277344

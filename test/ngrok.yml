@@ -4,10 +4,10 @@ web_addr: localhost:4040
 version: 2
 tunnels:
   mc:
-    addr: minecraft:25565
+    addr: minecraft-t:25565
     proto: tcp
   
   rc:
-    addr: minecraft:25575
+    addr: minecraft-t:25575
     proto: tcp
   

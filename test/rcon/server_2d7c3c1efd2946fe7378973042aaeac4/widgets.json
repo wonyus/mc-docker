@@ -1,0 +1,28 @@
+{
+  "list": [
+    {
+      "id": "rwa-timedcommands",
+      "position": 0,
+      "size": "large",
+      "options": {},
+      "storage": {}
+    },
+    {
+      "id": "rwa-autobot",
+      "position": 1,
+      "size": "large",
+      "options": {},
+      "storage": {}
+    },
+    {
+      "id": "rwa-console",
+      "position": 2,
+      "size": "large",
+      "options": {},
+      "storage": {
+        "logfile.id": 1,
+        "logfile.id.lifetime": -1
+      }
+    }
+  ]
+}

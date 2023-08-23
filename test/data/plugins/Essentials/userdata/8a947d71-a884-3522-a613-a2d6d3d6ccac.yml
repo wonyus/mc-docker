@@ -1,0 +1,63 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.21.0.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1692808103223
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1692808287074
+  login: 1692803543906
+money: '0'
+last-account-name: taeshinnnn
+logoutlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: -23.552935060027206
+  y: 44.0
+  z: -70.4574473153998
+  yaw: 118.51022338867188
+  pitch: 3.4228549003601074
+lastlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: 58.699855506635025
+  y: 87.0
+  z: -21.811338968680587
+  yaw: -149.3499755859375
+  pitch: 33.056190490722656
+homes:
+  home:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: -69.94457146729044
+    y: 52.0
+    z: -69.92288868789824
+    yaw: 40.696380615234375
+    pitch: 6.678001403808594
+  townhall:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: 55.5987566908941
+    y: 87.0
+    z: -28.158383171372687
+    yaw: 13.9285888671875
+    pitch: 36.394752502441406
+  farm:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: -31.452717038349036
+    y: 46.0
+    z: -73.20814355429155
+    yaw: -86.92118835449219
+    pitch: 3.1722421646118164

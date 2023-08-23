@@ -17,7 +17,7 @@ services:
       RCON_PORT: 28016
 
     ports:
-      - "25566:25565"
+      - "25565:25565"
 
     volumes:
       - ./data:/data
@@ -26,13 +26,40 @@ services:
     tty: true
     restart: 'no'
 
+    healthcheck:
+      test: "mc-health"
+      interval: 5s
+      timeout: 90s
+      retries: 20
+      start_period: 1m
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: "ngrok-t"
+    command:
+      - "start"
+      - "--all"
+      - "--config"
+      - "/etc/ngrok.yml"
+
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml
+    ports:
+      - '4040:4040'
+    expose:
+      - '4040'
+
   rcon:
     image: itzg/rcon
+    container_name: "rcon-t"
     environment:
       RWA_RCON_PASSWORD: wonyus
+      RWA_USERNAME: wonyus
       RWA_PASSWORD: wonyus
       RWA_GAME: minecraft
+      RWA_RCON_HOST: minecraft-t
       RWA_RCON_PORT: 28016
+      RWA_ADMIN: true
     ports:
       - "4326:4326"
       - "4327:4327"

@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.21.0.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1692815889682
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1692817112700
+  login: 1692813686775
+money: '0'
+last-account-name: macdecade
+homes:
+  home:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: -35.508344367059216
+    y: 76.0
+    z: 35.793986176536116
+    yaw: 157.29725646972656
+    pitch: 21.60636329650879
+lastlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: -5977.064772688855
+  y: 60.44715932156546
+  z: -302.23156980551266
+  yaw: -27.834503173828125
+  pitch: 6.3903326988220215
+logoutlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: -43.69999998807907
+  y: 76.0
+  z: 29.33444600366727
+  yaw: -111.15176391601562
+  pitch: 12.53165340423584

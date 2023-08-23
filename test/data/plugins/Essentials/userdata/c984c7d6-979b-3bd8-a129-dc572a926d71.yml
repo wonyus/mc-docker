@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.21.0.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1692814872059
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1692818718720
+  login: 1692817612923
+money: '0'
+last-account-name: Bookek
+lastlocation:
+  world: b8e2e855-a2bc-4965-a734-0fd7bdcd36ec
+  world-name: world_the_end
+  x: 225.88659872463074
+  y: 1.0
+  z: 0.4295731020342711
+  yaw: 94.79364013671875
+  pitch: 19.51352882385254
+homes:
+  home:
+    world: 53658c96-3292-4af5-aedd-63bf37f10b32
+    world-name: world
+    x: -24.21472992957021
+    y: 92.0
+    z: 79.1767076499339
+    yaw: 0.2272913157939911
+    pitch: 58.75696563720703
+logoutlocation:
+  world: 53658c96-3292-4af5-aedd-63bf37f10b32
+  world-name: world
+  x: 60.69999998807907
+  y: 80.0
+  z: -91.59098316056719
+  yaw: -42.5443115234375
+  pitch: 9.138379096984863

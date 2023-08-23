@@ -1,0 +1,213 @@
+# Placeholders for Staff Logger Webhook
+# %player% - Player Name
+# %command% - Command it will log
+# %server% - pulls from the config option "server_name"
+# %time% - Place holder for how many Seconds/Mins/Hours/Days command was ago
+#
+# Plugin Created by DankOfUK with help from ChatGPT
+# Discord for Support: http://discord.gg/2xYgHUfubM
+
+
+#
+# Discord Bot Settings
+#
+bot:
+  # Main Bot Configuration
+  enabled: true
+  discord_token: ""
+  adminRoleID: "1057520326373801995"
+  discord_activity: "with KushStaffUtils"
+
+  # Command Logger Configuration
+  command_log_channel_id: "1067570285999570984"
+  command_log_logAsEmbed: true
+  #command_log_message_formats: (Config Example with thats not an embed or multiple lines)
+  #  - "[%time%] [`%server%`] __**%player%:**__ `%command%`"
+  command_log_message_formats:
+    - "\n:information_source: __**Player:**__\n> `%player%`\n \n:gear: __**Use Commands:**__\n> `%command%`\n \n:satellite: __**Server:**__\n> `%server%`\n \n:timer: __**Time:**__\n> %time%"
+  command_log_embed_title_formats:
+    - ":information_source: COMMAND LOGGER"
+
+  # Log Commands Configuration
+  logsCommand_requireAdminRole: true
+
+  # Discord Chat 2 Game Chat Configuration
+  discord_to_game_enabled: true
+  discord_to_game_roleIdRequired: false
+  discord_to_game_roleId: "967958848369487943" #This is if roleIdRequired is true
+  discord_to_game_channel_id: "1067570285999570984"
+  discord_to_game_format: "&9[Discord] &c%author%: &7%message%"
+
+  # List Players Configuration
+  listplayers_requireAdminRole: false
+  listplayers_no_players_online_title: "`Online Players`"
+  listplayers_title_format: "Players Online `(%online%)` - %time%"
+  listplayers_footer_format: "Server IP: play.example.com - Test"
+  listplayers_thumbnail_url: "https://cdn.discordapp.com/avatars/265918857112322052/b047522734170c4d476370f8610b8318.png?size=1024"
+
+# Server Shutdown/Startup Logger
+serverstatus:
+  channel_id: "1096952523585245195"
+
+# Enable this if you want it to log commands to a file per use! (STORED VIA UUIDS)
+per-user-logging:
+  enabled: true # this logs in KushStaffLogger/logs
+
+
+suggestion:
+  title: "New Suggestion from %player%"
+  description: "%suggestion%"
+  color: "#94157f"
+  footer: "Submitted by %player% (%player_uuid%)"
+  thumbnail_url: "https://cdn.discordapp.com/avatars/265918857112322052/b047522734170c4d476370f8610b8318.png?size=4096"
+  channel_id: "1096952523585245195"
+  thread_id: "1096952523585245195" #Coming Soon
+  usage_message: "&cUsage: /suggest <suggestion>"
+  sent_message: "&aYour suggestion (%suggestion%) has been sent!"
+  cooldown: 60
+
+# Factions Top Announcer
+announcer:
+  webhookUrl: "your-webhook-here"
+  messages:
+    - "Factions Top #1: %factionstop_ftop1% - `$%factionstop_ftop1-totalworth%`"
+    - "Factions Top #2: %factionstop_ftop2% - `$%factionstop_ftop2-totalworth%`"
+    - "Factions Top #3: %factionstop_ftop3% - `$%factionstop_ftop3-totalworth%`"
+    - "Factions Top #4: %factionstop_ftop4% - `$%factionstop_ftop4-totalworth%`"
+    - "Factions Top #5: %factionstop_ftop5% - `$%factionstop_ftop5-totalworth%`"
+    - "Factions Top #6: %factionstop_ftop6% - `$%factionstop_ftop6-totalworth%`"
+    - "Factions Top #7: %factionstop_ftop7% - `$%factionstop_ftop7-totalworth%`"
+    - "Factions Top #8: %factionstop_ftop8% - `$%factionstop_ftop8-totalworth%`"
+    - "Factions Top #9: %factionstop_ftop9% - `$%factionstop_ftop9-totalworth%`"
+    - "Factions Top #10: %factionstop_ftop10% - `$%factionstop_ftop10-totalworth%`"
+    - ""
+    - "Join our server to compete!"
+  sendEvery: 15
+  enabled: false
+  title: "Factions Top Announcement"
+  username: "FactionsBot"
+  footer: "Factions Top Logger"
+  thumbnailUrl: "https://cdn.discordapp.com/avatars/1093413225338507344/a60fa5f0a630cafb471effcf3a3e1bd8.png?size=4096"
+  avatarUrl: "https://cdn.discordapp.com/avatars/1093413225338507344/a60fa5f0a630cafb471effcf3a3e1bd8.png?size=4096"
+  debuggerEnabled: false #Only enabled if debugging is required
+
+
+
+# Player Reporting Configuration
+enabled: false # If disabled it will not work
+# Chat Reporting Webhook Lang
+webhook-url: "your-webhook-here"
+username: "OBN"
+avatar-url: "https://example.com/avatar.png"
+report-message: ":information_source: `Player Reporting:`\n> **%player%**\n \n:red_circle: `Player Reported:`\n> **%reported_player%**\n \n:books: `Reason:`\n> %reason%"
+# Chat Reporting Lang
+cooldown-seconds: 600 # seconds
+report-sent-message: "&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fYour report has been sent!\n&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fThank you for helping us make the server safer!"
+no-permission-message: "&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fYou do not have permission to use this command."
+usage-message: "&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &c/report <player> <reason>\n&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fPlease use &cImgur&f or &cYoutube&f for proof."
+
+
+
+# Join Leave Webhooks Logger
+isEnabled: false
+joinWebhookUrl: "your-webhook-here"
+leaveWebhookUrl: "your-webhook-here"
+# Join and leave messages (THESE ARE SEND WHEN A PLAYER JOINS OR LEAVES THE SERVER)
+joinMessage:
+  - "> <:dot:1071609577122041856> `%player%` has *joined* the server!"
+  - "> <:dot:1071609577122041856> There are now `%server_online%` players online."
+  - ""
+  - "> :satellite: Server IP > play.servername.net"
+  - "> :computer: Website > www.servername.net"
+  - "> :department_store: Store > store.servername.net"
+leaveMessage:
+  - "> <:dot:1071609577122041856> `%player%` has *left* the server!"
+  - "> <:dot:1071609577122041856> There are now `%server_online%` players online."
+  - ""
+  - "> :satellite: Server IP > play.servername.net"
+  - "> :computer: Website > www.servername.net"
+  - "> :department_store: Store > store.servername.net"
+# If enabled it will send as a embed message!
+useEmbed: true
+# Gets the Server Name for the %server% placeholder
+server_name: "ONEBLOCK NATION"
+
+
+
+# Reload Config Config
+#
+# Change the no permission message!
+no_permission: "&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fYou do not have permission to &c/stafflogger&f!"
+
+# Change the no permission message!
+reload_message: "&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fThe config files have been reloaded!"
+
+# Commands the plugin will ingore
+ignored_commands:
+  - "/pin"
+  - "/register"
+  - "/login"
+  - "/password"
+
+# If false it will log all commands (ignored_commands wont ever be logged)
+# If true it will only log the command in the whitelist_commands (ignored_commands wont ever be logged)
+whitelist_enabled: false
+# Commands the will be logged if set to true (ignored_commands wont ever be logged)
+whitelisted_commands:
+  - "/kick"
+  - "/ipmute"
+  - "/ipban"
+  - "/ban"
+  - "/tempban"
+  - "/mute"
+  - "/tempmute"
+  - "/warn"
+  - "/clearchat"
+  - "/gmc"
+  - "/gmsp"
+  - "/co i"
+  - "/co rollback"
+  - "/co"
+  - "/irp restore"
+  - "/irp"
+  - "/invsee"
+  - "/kill"
+
+
+# Chat Webhook - BETA (LOGS GAME CHAT TO DISCORD)
+chatwebhook:
+  enabled: false
+  url: "your-webhook-here"
+  username: "My Bot Username"
+  avatarUrl: "https://cdn.discordapp.com/avatars/689960485495373824/19e1d85814a1a19c84e7ef0e261455a8.png?size=4096"
+  message: "[%vault_groups% %player_name%]: %message%"
+
+# Configure StrikeWebhook
+strike:
+  enabled: false
+  webhookUrl: "your-webhook-here"
+  username: "FactionStrikeBot"
+  avatarUrl: "https://cdn.discordapp.com/avatars/689960485495373824/19e1d85814a1a19c84e7ef0e261455a8.png?size=4096"
+  embedTitle: ":book: `Faction Strike`"
+  message: ":information_source: `Faction:`\n> **%group%**\n \n:red_circle: `Amount of Strikes:`\n> **%amount%**\n \n:books: `Reason:`\n> %reason%\n \n:man_beard: `Striked by:`\n> %staff%"
+  thumbnail: "https://cdn.discordapp.com/avatars/689960485495373824/19e1d85814a1a19c84e7ef0e261455a8.png?size=4096"
+  staffMessage: "&aYou have given &c%group% %amount% &aof strikes for &c%reason%"
+  sendCommand:
+    - "me test"
+    - "me test2"
+    - "me test3"
+    - "me test4"
+  noPermissionMessage: "&cYou do not have permission to use this command."
+  usageMessage: "&cUsage: /strike <group> <amount> <reason>"
+
+# Bug Command Webhook
+bug_webhook_url: "your-webhook-here"
+bug_username: "BUG REPORT"
+bug_thumbnail: "https://cdn.discordapp.com/avatars/689960485495373824/19e1d85814a1a19c84e7ef0e261455a8.png?size=4096"
+bug_avatar_url: "https://example.com/bug-avatar.png"
+is_bug_enabled: false
+bug_cooldown: 30
+bug_message: ":information_source: `Bug Reporter:`\n> **%player%**\n \n:red_circle: `Bug Info:`\n> **%bug%**"
+no_bug_permission_message: "&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fYou do not have permission to use this command."
+bug_usage_message: "&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &c/bug <report>"
+bug_sent_message: "&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fYour bug report has been logged.\n&c[&c&lsᴜᴘᴘᴏʀᴛ&c] &8» &fOverview: &c%reason%"

@@ -1,8 +1,0 @@
-{
-    "@type": "me.itzg.helpers.forge.ForgeManifest",
-    "timestamp": "2023-08-16T04:15:04.715273252Z",
-    "files": null,
-    "minecraftVersion": "1.20.1",
-    "forgeVersion": "47.1.44",
-    "serverEntry": "/data/./run.sh"
-}

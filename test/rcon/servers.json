@@ -1,11 +1,11 @@
 {
-  "25f9c3eea14abb6186f82f9ff9c4f338": {
-    "id": "25f9c3eea14abb6186f82f9ff9c4f338",
+  "2d7c3c1efd2946fe7378973042aaeac4": {
+    "id": "2d7c3c1efd2946fe7378973042aaeac4",
     "game": "minecraft",
     "name": "minecraft",
-    "host": "127.0.0.1",
+    "host": "minecraft-t",
     "users": [
-      "admin"
+      "wonyus"
     ],
     "web": false,
     "active": true,
